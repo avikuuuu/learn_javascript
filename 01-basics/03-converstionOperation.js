@@ -8,6 +8,8 @@ let valueInNumber = Number(score)
 //console.log(valueInNumber);
 
 
+// converstion
+
 // "33" => 33
 // "33abc" => NaN
 //  true => 1; false => 0
@@ -53,7 +55,7 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
+// console.log(+true);    //it make just conversion of bool to int 
 // console.log(+"");
 
 let num1, num2, num3
