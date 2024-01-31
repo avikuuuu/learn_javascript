@@ -53,3 +53,33 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+/*
+stack(primitive) got copy here
+here chnages are made over copy given to varible
+heap(non-primitive) got reference 
+where change made in original copy
+
+1. Primitive types (e.g., numbers, strings, booleans):
+   - When you assign a primitive type to a variable, a copy of the value is made.
+   - Changes to the variable do not affect the original value.
+
+   ```javascript
+   let x = 5;  // x is a copy of the value 5
+   let y = x;  // y is also a copy of the value 5
+   y = 10;     // Changing y does not affect x
+   ```
+
+2. Non-primitive types (e.g., objects, arrays):
+   - When you assign a non-primitive type to a variable, you get a reference to the original value (stored in the heap memory).
+   - Changes made through the variable affect the original value because you're working with a reference to the same data.
+
+   ```javascript
+   let array1 = [1, 2, 3];   // array1 is a reference to an array in the heap
+   let array2 = array1;      // array2 is also a reference to the same array in the heap
+   array2.push(4);           // Changing array2 also affects array1
+   ```
+*/
