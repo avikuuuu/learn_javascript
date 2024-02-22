@@ -1,34 +1,23 @@
-let open =32;
-const cv ='ab';
-var ad=23;
-ac=32;
+// Declaration of variables using different keywords
+let open = 32;     // Using let (block scope), initializing variable open with the value 32
+const cv = 'ab';   // Using const (block scope), initializing constant variable cv with the string 'ab'
+var ad = 23;       // Using var (global scope), initializing variable ad with the value 23
+ac = 32;           // Implicit global variable declaration, initializing ac with the value 32
 
-// cv=12;       not allow
+// Attempting to reassign a value to a constant (will result in an error)
+// cv = 12;       // Uncommenting this line would result in an error, as const cannot be reassigned
 
-var ad =45;
+// Reassigning a value to an existing variable (var allows redeclaration)
+var ad = 45;       // Redeclaring and assigning a new value to variable ad
 
+// Logging the values of the variables to the console
+console.log(open); // Logging the value of open
+console.log(cv);   // Logging the value of cv
+console.log(ad);   // Logging the value of ad
+console.log(ac);   // Logging the value of ac (implicitly declared global variable)
 
-console.log(open);
-console.log(cv);
-console.log(ad);
-console.log(ac);
-
-// console.table([open,cv,ad,ac]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Displaying the values of variables in a tabular format using console.table
+// console.table([open, cv, ad, ac]);
 
 
 

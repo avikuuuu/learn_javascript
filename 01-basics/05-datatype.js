@@ -82,4 +82,13 @@ where change made in original copy
    let array2 = array1;      // array2 is also a reference to the same array in the heap
    array2.push(4);           // Changing array2 also affects array1
    ```
-*/
+
+   
+Explanation:
+
+1. The code provides clear definitions of primitive and non-primitive data types in JavaScript.
+2. Examples of primitive types (Number, String, Boolean, null, undefined, Symbol, BigInt) and their usage are demonstrated.
+3. Examples of non-primitive types (Arrays, Objects, Functions) are illustrated.
+4. The comments explain the behavior of primitive and non-primitive types in terms of copying and referencing, including a brief example for each type.
+4. It states that when we declare `y=x`, both variables hold references to the same
+*/  
